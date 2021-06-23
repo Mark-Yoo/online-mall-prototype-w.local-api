@@ -1,0 +1,34 @@
+.commonHeader {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: yellow;
+}
+
+.logo {
+  width: 30%;
+  height: 50px;
+  background-color: pink;
+}
+
+.menu {
+  width: 30%;
+  height: 50px;
+  background-color: lime;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.sideMenu {
+  width: 30%;
+  background-color: orange;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  > li {
+    margin: 0 30px;
+  }
+}

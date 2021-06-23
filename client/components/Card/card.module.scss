@@ -1,0 +1,41 @@
+.indivCardWrapper {
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 20vw;
+  display: inline-block;
+  margin: 10px;
+}
+
+.cardImg {
+  width: 100%;
+  height: 200px;
+}
+
+.productImage {
+  width: 100%;
+  height: 100%;
+}
+
+.productDetailWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.priceWrapper {
+  display: flex;
+  > span {
+    margin: 0 10px;
+  }
+}
+
+.productName {
+  margin: 10px;
+}
+.discount {
+}
+.price {
+}
+
+.grade {
+  margin: 10px;
+}

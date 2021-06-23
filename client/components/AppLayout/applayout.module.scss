@@ -1,0 +1,11 @@
+.appLayout {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main {
+  width: 100vw;
+  display: flex;
+}
