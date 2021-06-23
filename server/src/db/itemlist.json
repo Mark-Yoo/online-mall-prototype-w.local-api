@@ -1,0 +1,505 @@
+{
+  "categoryList": ["New", "Men", "Women", "Kids"],
+  "totalList": [
+    {
+      "id": 50,
+      "productName": "Gorgeous Soft Hat",
+      "productImage": "http://placeimg.com/640/480/fashion",
+      "price": 13800,
+      "grade": 4.6,
+      "category": "Women",
+      "categoryDetail": "청바지",
+      "releaseDate": "2019-09-27T02:14:11.467Z"
+    },
+    {
+      "id": 49,
+      "productName": "Unbranded Metal Shoes",
+      "productImage": "http://placeimg.com/640/480/fashion",
+      "price": 40700,
+      "grade": 2,
+      "category": "Kids",
+      "categoryDetail": "청바지",
+      "releaseDate": "2019-12-31T03:25:17.597Z"
+    },
+    {
+      "id": 48,
+      "productName": "Incredible Frozen Car",
+      "productImage": "http://placeimg.com/640/480/fashion",
+      "price": 200,
+      "grade": 1.5,
+      "category": "New",
+      "categoryDetail": "코트",
+      "releaseDate": "2018-08-13T17:47:43.966Z"
+    },
+    {
+      "id": 47,
+      "productName": "Rustic Plastic Ball",
+      "productImage": "http://placeimg.com/640/480/fashion",
+      "price": 92100,
+      "grade": 3.1,
+      "category": "Women",
+      "categoryDetail": "신발",
+      "releaseDate": "2021-06-18T20:26:33.176Z"
+    },
+    {
+      "id": 46,
+      "productName": "Intelligent Cotton Keyboard",
+      "productImage": "http://placeimg.com/640/480/fashion",
+      "price": 40800,
+      "grade": 3.3,
+      "category": "Women",
+      "categoryDetail": "청바지",
+      "releaseDate": "2020-05-22T23:39:16.080Z"
+    },
+    {
+      "id": 45,
+      "productName": "Licensed Rubber Car",
+      "productImage": "http://placeimg.com/640/480/fashion",
+      "price": 14600,
+      "grade": 2.1,
+      "category": "Men",
+      "categoryDetail": "스웨터",
+      "releaseDate": "2020-09-10T01:45:42.315Z"
+    },
+    {
+      "id": 44,
+      "productName": "Small Cotton Keyboard",
+      "productImage": "http://placeimg.com/640/480/fashion",
+      "price": 91200,
+      "grade": 1.8,
+      "category": "New",
+      "categoryDetail": "청바지",
+      "releaseDate": "2018-09-09T06:36:48.951Z"
+    },
+    {
+      "id": 43,
+      "productName": "Unbranded Steel Shirt",
+      "productImage": "http://placeimg.com/640/480/fashion",
+      "price": 49600,
+      "grade": 4.2,
+      "category": "Women",
+      "categoryDetail": "스웨터",
+      "releaseDate": "2019-01-24T13:01:01.915Z"
+    },
+    {
+      "id": 42,
+      "productName": "Small Wooden Mouse",
+      "productImage": "http://placeimg.com/640/480/fashion",
+      "price": 81300,
+      "grade": 1.8,
+      "category": "Women",
+      "categoryDetail": "코트",
+      "releaseDate": "2020-12-25T03:34:56.916Z"
+    },
+    {
+      "id": 41,
+      "productName": "Unbranded Granite Chicken",
+      "productImage": "http://placeimg.com/640/480/fashion",
+      "price": 43800,
+      "grade": 2.5,
+      "category": "Women",
+      "categoryDetail": "신발",
+      "releaseDate": "2020-04-21T22:26:24.294Z"
+    },
+    {
+      "id": 40,
+      "productName": "Unbranded Fresh Tuna",
+      "productImage": "http://placeimg.com/640/480/fashion",
+      "price": 1200,
+      "grade": 2.5,
+      "category": "Men",
+      "categoryDetail": "신발",
+      "releaseDate": "2019-08-10T20:52:33.577Z"
+    },
+    {
+      "id": 39,
+      "productName": "Rustic Frozen Fish",
+      "productImage": "http://placeimg.com/640/480/fashion",
+      "price": 33200,
+      "grade": 4.6,
+      "category": "Women",
+      "categoryDetail": "맨투맨",
+      "releaseDate": "2021-06-09T05:55:19.725Z"
+    },
+    {
+      "id": 38,
+      "productName": "Licensed Cotton Bacon",
+      "productImage": "http://placeimg.com/640/480/fashion",
+      "price": 1500,
+      "grade": 2.3,
+      "category": "Women",
+      "categoryDetail": "코트",
+      "releaseDate": "2021-05-19T19:29:27.164Z"
+    },
+    {
+      "id": 37,
+      "productName": "Intelligent Cotton Fish",
+      "productImage": "http://placeimg.com/640/480/fashion",
+      "price": 27200,
+      "grade": 1.9,
+      "category": "New",
+      "categoryDetail": "신발",
+      "releaseDate": "2018-12-23T01:46:46.538Z"
+    },
+    {
+      "id": 36,
+      "productName": "Handmade Concrete Hat",
+      "productImage": "http://placeimg.com/640/480/fashion",
+      "price": 26100,
+      "grade": 3,
+      "category": "New",
+      "categoryDetail": "코트",
+      "releaseDate": "2018-02-24T02:56:12.332Z"
+    },
+    {
+      "id": 35,
+      "productName": "Small Frozen Soap",
+      "productImage": "http://placeimg.com/640/480/fashion",
+      "price": 52600,
+      "grade": 0.6,
+      "category": "Kids",
+      "categoryDetail": "청바지",
+      "releaseDate": "2020-08-30T15:27:04.673Z"
+    },
+    {
+      "id": 34,
+      "productName": "Handcrafted Granite Pants",
+      "productImage": "http://placeimg.com/640/480/fashion",
+      "price": 47500,
+      "grade": 2,
+      "category": "Women",
+      "categoryDetail": "신발",
+      "releaseDate": "2021-02-09T03:38:50.970Z"
+    },
+    {
+      "id": 33,
+      "productName": "Practical Rubber Computer",
+      "productImage": "http://placeimg.com/640/480/fashion",
+      "price": 99300,
+      "grade": 4.3,
+      "category": "Women",
+      "categoryDetail": "스웨터",
+      "releaseDate": "2020-02-06T18:21:57.073Z"
+    },
+    {
+      "id": 32,
+      "productName": "Rustic Metal Shirt",
+      "productImage": "http://placeimg.com/640/480/fashion",
+      "price": 71800,
+      "grade": 4.1,
+      "category": "Kids",
+      "categoryDetail": "신발",
+      "releaseDate": "2019-12-14T06:32:58.040Z"
+    },
+    {
+      "id": 31,
+      "productName": "Generic Granite Table",
+      "productImage": "http://placeimg.com/640/480/fashion",
+      "price": 66000,
+      "grade": 3.9,
+      "category": "Kids",
+      "categoryDetail": "맨투맨",
+      "releaseDate": "2018-01-04T06:47:25.030Z"
+    },
+    {
+      "id": 30,
+      "productName": "Handcrafted Rubber Fish",
+      "productImage": "http://placeimg.com/640/480/fashion",
+      "price": 100,
+      "grade": 0.7,
+      "category": "Men",
+      "categoryDetail": "코트",
+      "releaseDate": "2019-12-29T15:15:33.892Z"
+    },
+    {
+      "id": 29,
+      "productName": "Fantastic Rubber Pizza",
+      "productImage": "http://placeimg.com/640/480/fashion",
+      "price": 64600,
+      "grade": 4.3,
+      "category": "Women",
+      "categoryDetail": "신발",
+      "releaseDate": "2020-11-02T15:18:53.185Z"
+    },
+    {
+      "id": 28,
+      "productName": "Refined Rubber Chair",
+      "productImage": "http://placeimg.com/640/480/fashion",
+      "price": 45500,
+      "grade": 2.1,
+      "category": "Men",
+      "categoryDetail": "청바지",
+      "releaseDate": "2021-04-25T12:45:46.602Z"
+    },
+    {
+      "id": 27,
+      "productName": "Sleek Fresh Gloves",
+      "productImage": "http://placeimg.com/640/480/fashion",
+      "price": 63400,
+      "grade": 4.5,
+      "category": "Men",
+      "categoryDetail": "청바지",
+      "releaseDate": "2020-10-15T20:25:48.246Z"
+    },
+    {
+      "id": 26,
+      "productName": "Intelligent Concrete Hat",
+      "productImage": "http://placeimg.com/640/480/fashion",
+      "price": 44500,
+      "grade": 2.7,
+      "category": "Kids",
+      "categoryDetail": "맨투맨",
+      "releaseDate": "2018-11-17T15:31:03.804Z"
+    },
+    {
+      "id": 25,
+      "productName": "Handmade Cotton Shirt",
+      "productImage": "http://placeimg.com/640/480/fashion",
+      "price": 13900,
+      "grade": 2,
+      "category": "Men",
+      "categoryDetail": "코트",
+      "releaseDate": "2020-07-21T11:58:50.742Z"
+    },
+    {
+      "id": 24,
+      "productName": "Refined Fresh Chair",
+      "productImage": "http://placeimg.com/640/480/fashion",
+      "price": 72900,
+      "grade": 1.6,
+      "category": "New",
+      "categoryDetail": "스웨터",
+      "releaseDate": "2018-05-23T17:48:45.674Z"
+    },
+    {
+      "id": 23,
+      "productName": "Licensed Soft Mouse",
+      "productImage": "http://placeimg.com/640/480/fashion",
+      "price": 87500,
+      "grade": 3.1,
+      "category": "Men",
+      "categoryDetail": "스웨터",
+      "releaseDate": "2020-04-26T14:45:14.638Z"
+    },
+    {
+      "id": 22,
+      "productName": "Intelligent Soft Car",
+      "productImage": "http://placeimg.com/640/480/fashion",
+      "price": 26100,
+      "grade": 2.1,
+      "category": "Men",
+      "categoryDetail": "스웨터",
+      "releaseDate": "2018-02-05T17:41:03.876Z"
+    },
+    {
+      "id": 21,
+      "productName": "Ergonomic Rubber Chicken",
+      "productImage": "http://placeimg.com/640/480/fashion",
+      "price": 82300,
+      "grade": 4.9,
+      "category": "Women",
+      "categoryDetail": "맨투맨",
+      "releaseDate": "2020-12-07T12:56:29.458Z"
+    },
+    {
+      "id": 20,
+      "productName": "Small Frozen Ball",
+      "productImage": "http://placeimg.com/640/480/fashion",
+      "price": 11000,
+      "grade": 1.6,
+      "category": "Women",
+      "categoryDetail": "맨투맨",
+      "releaseDate": "2020-07-06T02:50:58.407Z"
+    },
+    {
+      "id": 19,
+      "productName": "Incredible Wooden Chair",
+      "productImage": "http://placeimg.com/640/480/fashion",
+      "price": 67100,
+      "grade": 3.7,
+      "category": "Women",
+      "categoryDetail": "맨투맨",
+      "releaseDate": "2020-12-09T08:23:04.467Z"
+    },
+    {
+      "id": 18,
+      "productName": "Licensed Wooden Sausages",
+      "productImage": "http://placeimg.com/640/480/fashion",
+      "price": 63100,
+      "grade": 0.6,
+      "category": "New",
+      "categoryDetail": "청바지",
+      "releaseDate": "2019-02-27T00:45:51.051Z"
+    },
+    {
+      "id": 17,
+      "productName": "Unbranded Metal Hat",
+      "productImage": "http://placeimg.com/640/480/fashion",
+      "price": 91000,
+      "grade": 4.6,
+      "category": "Kids",
+      "categoryDetail": "맨투맨",
+      "releaseDate": "2020-12-09T00:15:42.558Z"
+    },
+    {
+      "id": 16,
+      "productName": "Rustic Plastic Chair",
+      "productImage": "http://placeimg.com/640/480/fashion",
+      "price": 22400,
+      "grade": 3.1,
+      "category": "New",
+      "categoryDetail": "청바지",
+      "releaseDate": "2020-07-17T19:44:05.989Z"
+    },
+    {
+      "id": 15,
+      "productName": "Intelligent Fresh Mouse",
+      "productImage": "http://placeimg.com/640/480/fashion",
+      "price": 58900,
+      "grade": 3.1,
+      "category": "Men",
+      "categoryDetail": "청바지",
+      "releaseDate": "2018-02-07T15:34:42.450Z"
+    },
+    {
+      "id": 14,
+      "productName": "Rustic Concrete Mouse",
+      "productImage": "http://placeimg.com/640/480/fashion",
+      "price": 72500,
+      "grade": 0,
+      "category": "Women",
+      "categoryDetail": "스웨터",
+      "releaseDate": "2021-04-06T18:30:16.725Z"
+    },
+    {
+      "id": 13,
+      "productName": "Refined Wooden Bike",
+      "productImage": "http://placeimg.com/640/480/fashion",
+      "price": 53300,
+      "grade": 4.8,
+      "category": "Women",
+      "categoryDetail": "코트",
+      "releaseDate": "2018-01-17T21:26:31.116Z"
+    },
+    {
+      "id": 12,
+      "productName": "Sleek Soft Hat",
+      "productImage": "http://placeimg.com/640/480/fashion",
+      "price": 95800,
+      "grade": 4,
+      "category": "Men",
+      "categoryDetail": "스웨터",
+      "releaseDate": "2018-09-23T03:45:59.609Z"
+    },
+    {
+      "id": 11,
+      "productName": "Tasty Cotton Pants",
+      "productImage": "http://placeimg.com/640/480/fashion",
+      "price": 77200,
+      "grade": 4.4,
+      "category": "Men",
+      "categoryDetail": "스웨터",
+      "releaseDate": "2020-02-22T16:31:45.229Z"
+    },
+    {
+      "id": 10,
+      "productName": "Generic Steel Towels",
+      "productImage": "http://placeimg.com/640/480/fashion",
+      "price": 86300,
+      "grade": 1.4,
+      "category": "Kids",
+      "categoryDetail": "맨투맨",
+      "releaseDate": "2020-06-01T05:49:24.005Z"
+    },
+    {
+      "id": 9,
+      "productName": "Awesome Granite Sausages",
+      "productImage": "http://placeimg.com/640/480/fashion",
+      "price": 3800,
+      "grade": 3.2,
+      "category": "Women",
+      "categoryDetail": "코트",
+      "releaseDate": "2018-02-04T13:23:49.382Z"
+    },
+    {
+      "id": 8,
+      "productName": "Ergonomic Steel Ball",
+      "productImage": "http://placeimg.com/640/480/fashion",
+      "price": 30000,
+      "grade": 3.5,
+      "category": "Men",
+      "categoryDetail": "코트",
+      "releaseDate": "2019-05-14T08:44:21.115Z"
+    },
+    {
+      "id": 7,
+      "productName": "Generic Granite Hat",
+      "productImage": "http://placeimg.com/640/480/fashion",
+      "price": 900,
+      "grade": 2.9,
+      "category": "Women",
+      "categoryDetail": "맨투맨",
+      "releaseDate": "2019-02-03T06:56:31.000Z"
+    },
+    {
+      "id": 6,
+      "productName": "Handmade Fresh Hat",
+      "productImage": "http://placeimg.com/640/480/fashion",
+      "price": 5300,
+      "grade": 1,
+      "category": "Kids",
+      "categoryDetail": "신발",
+      "releaseDate": "2018-05-26T02:04:58.500Z"
+    },
+    {
+      "id": 5,
+      "productName": "Handmade Wooden Pants",
+      "productImage": "http://placeimg.com/640/480/fashion",
+      "price": 1300,
+      "grade": 3.1,
+      "category": "New",
+      "categoryDetail": "청바지",
+      "releaseDate": "2018-05-26T07:56:19.650Z"
+    },
+    {
+      "id": 4,
+      "productName": "Fantastic Granite Shoes",
+      "productImage": "http://placeimg.com/640/480/fashion",
+      "price": 46300,
+      "grade": 1.5,
+      "category": "Kids",
+      "categoryDetail": "스웨터",
+      "releaseDate": "2018-05-07T07:50:41.353Z"
+    },
+    {
+      "id": 3,
+      "productName": "Intelligent Metal Pizza",
+      "productImage": "http://placeimg.com/640/480/fashion",
+      "price": 49800,
+      "grade": 1,
+      "category": "New",
+      "categoryDetail": "맨투맨",
+      "releaseDate": "2020-05-31T01:02:31.000Z"
+    },
+    {
+      "id": 2,
+      "productName": "Intelligent Plastic Cheese",
+      "productImage": "http://placeimg.com/640/480/fashion",
+      "price": 52600,
+      "grade": 1.1,
+      "category": "Kids",
+      "categoryDetail": "신발",
+      "releaseDate": "2020-01-19T04:08:36.927Z"
+    },
+    {
+      "id": 1,
+      "productName": "Generic Cotton Keyboard",
+      "productImage": "http://placeimg.com/640/480/fashion",
+      "price": 26300,
+      "grade": 4.8,
+      "category": "Kids",
+      "categoryDetail": "청바지",
+      "releaseDate": "2020-03-01T07:50:30.532Z"
+    }
+  ]
+}
