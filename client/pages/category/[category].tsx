@@ -8,9 +8,10 @@ import CategoryFilter from '../../components/Categoryfilter';
 import { RootState } from '../../store/reducers';
 import { getFilter } from '../../store/reducers/getItemlist';
 import { useRouter } from 'next/router';
+import SideCategory from '../../components/SideCategory';
 
 const Category = () => {
-  const { itemList } = useSelector((state: RootState) => state.getItemlist);
+  const { copiedItemList } = useSelector((state: RootState) => state.getItemlist);
   const dispatch = useDispatch();
   const router = useRouter();
   const { category } = router.query;
@@ -21,11 +22,17 @@ const Category = () => {
 
   return (
     <AppLayout>
-      <CardWrapper>
-        <CategoryFilter />
-        {itemList &&
-          itemList?.map((item, i) =>
-            i !== 0 && i % 4 ? (
+      <div
+        style={{
+          display: 'flex',
+          margin: '0 auto',
+        }}
+      >
+        <SideCategory />
+        <CardWrapper>
+          <CategoryFilter />
+          {copiedItemList?.map((item, i) =>
+            i !== 0 && i % 3 ? (
               <Link href={`/detail/${item.id}`} key={item.id.toString()}>
                 <a style={{ color: 'black' }}>
                   <Card item={item} />
@@ -42,7 +49,8 @@ const Category = () => {
               </React.Fragment>
             ),
           )}
-      </CardWrapper>
+        </CardWrapper>
+      </div>
     </AppLayout>
   );
 };

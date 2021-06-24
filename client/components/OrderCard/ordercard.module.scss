@@ -1,16 +1,20 @@
 .orderWrapper {
   margin: 0 auto;
   border-radius: 5px;
+  overflow: auto;
 }
 
 .orderCard {
   display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   border: 1px solid black;
   margin: 10px;
 }
 
 .productInfo {
   display: flex;
+  width: 30%;
   flex-direction: column;
   justify-content: space-evenly;
   margin: 10px 30px;
@@ -21,9 +25,13 @@
 }
 .detailImg {
   margin: 20px 40px;
-  > img {
-    width: 10vw;
-    height: 10vw;
+  img {
+    width: 15vw;
+    height: 15vw;
+    @media screen and (max-width: 700px) {
+      width: 20vw;
+      height: 20vw;
+    }
   }
 }
 
@@ -33,4 +41,25 @@
 
 .productPrice {
   font-size: 25px;
+}
+.buttonWrapper {
+  width: 30%;
+  background-color: pink;
+}
+.orderDelete {
+  width: 10%;
+  height: 50px;
+}
+.totalCost {
+  position: sticky;
+  bottom: 0;
+  background-color: white;
+  height: 15vh;
+  border-top: 1px solid black;
+  display: flex;
+  margin-bottom: -10px;
+  flex-direction: column;
+  span {
+    margin: 5px;
+  }
 }

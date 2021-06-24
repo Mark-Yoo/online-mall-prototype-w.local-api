@@ -11,6 +11,7 @@ const Card = ({ item }: any) => {
         <div className={styles.productName}>제품명: {item?.productName}</div>
         <div className={styles.priceWrapper}>
           <span className={styles.price}>가격: {item?.price.toLocaleString()}원</span>
+          <span className={styles.discount}>-{item?.discount}%</span>
         </div>
         <div className={styles.grade}>별점: {item?.grade} / 5.0</div>
       </div>

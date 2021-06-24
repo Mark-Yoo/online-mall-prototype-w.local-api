@@ -13,9 +13,7 @@ const Order = () => {
     dispatch(getUserOrderList());
   }, [dispatch]);
 
-  useEffect(() => {
-    console.log(orderList);
-  }, [orderList]);
+  useEffect(() => {}, []);
 
   return <AppLayout>{orderList && <OrderCard orderList={orderList} />}</AppLayout>;
 };

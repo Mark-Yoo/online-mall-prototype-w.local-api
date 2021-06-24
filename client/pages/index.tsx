@@ -4,6 +4,7 @@ import Card from '../components/Card';
 import { useSelector, useDispatch } from 'react-redux';
 import { RootState } from '../store/reducers';
 import { getCategory } from '../store/reducers/getItemlist';
+import HomeCard from '../components/HomeCard';
 
 const Home = () => {
   const { categoryList } = useSelector((state: RootState) => state.getItemlist);
@@ -15,7 +16,7 @@ const Home = () => {
 
   return (
     <AppLayout>
-      <Card />
+      <HomeCard />
     </AppLayout>
   );
 };

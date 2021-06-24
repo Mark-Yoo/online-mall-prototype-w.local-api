@@ -28,16 +28,20 @@ const DetailCard = () => {
 
   return (
     <form className={styles.purchaseForm} onSubmit={onSubmit}>
-      <div className={styles.detailImg}>
-        <img src={itemDetail[0]?.productImage}></img>
+      <div className={styles.purchaseWrapper}>
+        <div className={styles.detailImg}>
+          <img src={itemDetail[0]?.productImage}></img>
+        </div>
+        <div className={styles.productInfo}>
+          <span className={styles.productName}>{itemDetail[0]?.productName}</span>
+          <span className={styles.productPrice}>가격: {itemDetail[0]?.price.toLocaleString()}원</span>
+          <span className={styles.productDiscount}> {itemDetail[0]?.discount}% 할인</span>
+          <button type="submit" className={styles.purchaseBtn}>
+            장바구니 담기
+          </button>
+        </div>
       </div>
-      <div className={styles.productInfo}>
-        <span className={styles.productName}>{itemDetail[0]?.productName}</span>
-        <span className={styles.productPrice}>가격: {itemDetail[0]?.price.toLocaleString()} 원</span>
-        <button type="submit" className={styles.purchaseBtn}>
-          장바구니 담기
-        </button>
-      </div>
+      <div className={styles.productDetail}>디테일 설명란</div>
     </form>
   );
 };

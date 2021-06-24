@@ -7,6 +7,7 @@ export interface Item {
   category: string;
   categoryDetail: string;
   releaseDate: string;
+  discount: number;
 }
 
 export interface ItemList {
@@ -14,11 +15,13 @@ export interface ItemList {
     GET_ITEMS: boolean;
     GET_CATEGORY: boolean;
     CHANGE_CATEGORY: boolean;
+    CHANGE_DETAIL_CATEGORY: boolean;
   };
   itemList: Item[];
   categoryList: string[];
-  filteredList: Item[];
+  detailCategoryList: string[];
   itemDetail: Item[];
+  copiedItemList: Item[];
 }
 
 export interface TypeDispatch {
@@ -30,6 +33,7 @@ export interface TypeDispatch {
 export interface Order {
   loading: {
     GET_ORDER: boolean;
+    DELETE_ORDER: boolean;
   };
   orderList: Item[];
 }

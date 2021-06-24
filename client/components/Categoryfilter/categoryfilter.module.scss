@@ -1,10 +1,17 @@
-.deatilFilter {
-}
-
 .detailFilterList {
   display: flex;
+  align-items: center;
   list-style: none;
-  > li {
-    margin: 10px;
+  li {
+    margin: 30px 10px;
+    cursor: pointer;
   }
+}
+
+.active {
+  color: blue;
+  border: 1px solid #1ac64e;
+  background-color: rgb(71, 240, 122);
+  border-radius: 5px;
+  padding: 20px;
 }

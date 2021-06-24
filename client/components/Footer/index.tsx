@@ -2,8 +2,11 @@ import React from 'react';
 import styles from './footer.module.scss';
 
 const Footer = () => {
+  const onClick = (e: any) => {
+    console.log(e);
+  };
   return (
-    <footer className={styles.infoFooter}>
+    <footer className={styles.infoFooter} onClick={onClick}>
       <div className={styles.companyInfo}>
         <img className={styles.logo} alt="회사 로고" />
         <span>(주)회사 이름</span>

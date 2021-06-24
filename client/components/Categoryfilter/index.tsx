@@ -1,15 +1,17 @@
-import React, { useCallback, useEffect } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from '../../store/reducers';
 import { changeDetailFilter } from '../../store/reducers/getItemlist';
 import styles from './categoryfilter.module.scss';
 
 const CategoryFilter = () => {
-  const { itemList } = useSelector((state: RootState) => state.getItemlist);
+  const [activeFilter, setActiveFilter] = useState<string>('grade');
   const dispatch = useDispatch();
 
   const onClickChangeCategory = useCallback(
     (e) => {
+      if (e.target.nodeName !== 'LI') return;
+      setActiveFilter(e.target.id);
       dispatch(changeDetailFilter(e.target.id));
     },
     [dispatch],
@@ -18,10 +20,18 @@ const CategoryFilter = () => {
   return (
     <div className={styles.detailFilter} onClick={onClickChangeCategory}>
       <ul className={styles.detailFilterList}>
-        <li id="releaseDate">최신 순</li>
-        <li id="price">높은 가격 순</li>
-        <li id="lowerPrice">낮은 가격 순</li>
-        <li id="grade">별점 순</li>
+        <li id="releaseDate" className={activeFilter === 'releaseDate' ? styles.active : ''}>
+          최신 순
+        </li>
+        <li id="price" className={activeFilter === 'price' ? styles.active : ''}>
+          높은 가격 순
+        </li>
+        <li id="lowerPrice" className={activeFilter === 'lowerPrice' ? styles.active : ''}>
+          낮은 가격 순
+        </li>
+        <li id="grade" className={activeFilter === 'grade' ? styles.active : ''}>
+          별점 순
+        </li>
       </ul>
     </div>
   );

@@ -9,8 +9,12 @@ export const getFilteredList = (params: any) => axios.get(api + `/itemlist/${par
 
 export const getCategoryList = () => axios.get(api + `/itemlist/categorylist`);
 
+export const getDetailCategoryList = () => axios.get(api + `/itemlist/detailcategorylist`);
+
 export const getDetail = (params: any) => axios.get(api + `/itemlist/detail/${params}`);
 
 export const getOrder = () => axios.get(api + `/userorder`);
 
 export const postOrder = (params: Item) => axios.post(api + `/userorder`, params);
+
+export const deleteOrder = (params: any) => axios.delete(api + `/userorder/delete/${params}`);

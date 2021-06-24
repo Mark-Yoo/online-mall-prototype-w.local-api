@@ -1,10 +1,11 @@
 import { handleActions } from 'redux-actions';
-import { getOrder, postOrder } from '../../api';
+import { deleteOrder, getOrder, postOrder } from '../../api';
 import { Item, Order, TypeDispatch } from '../../typings/db';
 
 const initialState: Order = {
   loading: {
     GET_ORDER: false,
+    DELETE_ORDER: false,
   },
   orderList: [],
 };
@@ -16,6 +17,10 @@ const GET_ORDERLIST_FAILURE = 'getOrderlist/GET_ORDERLIST_FAILURE';
 const POST_ORDERLIST = 'getOrderlist/POST_ORDERLIST';
 const POST_ORDERLIST_SUCCESS = 'getOrderlist/POST_ORDERLIST_SUCCESS';
 const POST_ORDERLIST_FAILURE = 'getOrderlist/POST_ORDERLIST_FAILURE';
+
+const DELETE_ORDERLIST = 'getOrderlist/DELETE_ORDERLIST';
+const DELETE_ORDERLIST_SUCCESS = 'getOrderlist/DELETE_ORDERLIST_SUCCESS';
+const DELETE_ORDERLIST_FAILURE = 'getOrderlist/DELETE_ORDERLIST_FAILURE';
 
 export const getUserOrderList = () => async (dispatch: (arg0: TypeDispatch) => void) => {
   dispatch({ type: GET_ORDERLIST });
@@ -46,6 +51,25 @@ export const postOrderList = (payload: Item) => async (dispatch: (arg0: TypeDisp
   } catch (e) {
     dispatch({
       type: POST_ORDERLIST_FAILURE,
+      payload: e,
+      error: true,
+    });
+    throw e;
+  }
+};
+
+export const deleteOrderList = (payload: any) => async (dispatch: (arg0: TypeDispatch) => void) => {
+  dispatch({ type: DELETE_ORDERLIST });
+  try {
+    const response = await deleteOrder(payload);
+
+    dispatch({
+      type: DELETE_ORDERLIST_SUCCESS,
+      payload: response.data,
+    });
+  } catch (e) {
+    dispatch({
+      type: DELETE_ORDERLIST_FAILURE,
       payload: e,
       error: true,
     });
@@ -97,6 +121,28 @@ const getOrderlist = handleActions(
       loading: {
         ...state.loading,
         GET_ORDER: false,
+      },
+    }),
+    [DELETE_ORDERLIST]: (state) => ({
+      ...state,
+      loading: {
+        ...state.loading,
+        DELETE_ORDER: true,
+      },
+    }),
+    [DELETE_ORDERLIST_SUCCESS]: (state, action: any) => ({
+      ...state,
+      loading: {
+        ...state.loading,
+        DELETE_ORDER: false,
+      },
+      orderList: action.payload,
+    }),
+    [DELETE_ORDERLIST_FAILURE]: (state) => ({
+      ...state,
+      loading: {
+        ...state.loading,
+        DELETE_ORDER: false,
       },
     }),
   },
