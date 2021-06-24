@@ -11,12 +11,12 @@ const userorderRoute = [
   },
   {
     method: "delete",
-    route: "/userorder",
-    handler: ({ body }, res) => {
+    route: "/userorder/delete/:id",
+    handler: ({ params: { id } }, res) => {
       try {
         const order = readDB("userorder");
 
-        const deletedOrder = order.filter((item) => item.id !== +body.id);
+        const deletedOrder = order.filter((item) => item.id !== +id);
 
         writeDB("userorder", deletedOrder);
         res.send(deletedOrder);
