@@ -5,8 +5,8 @@ const userorderRoute = [
     method: "get",
     route: "/userorder",
     handler: (req, res) => {
-      const lists = readDB("userorder");
-      res.send(lists);
+      const order = readDB("userorder");
+      res.send(order);
     },
   },
   {
