@@ -11,6 +11,14 @@ const itemlistRoute = [
   },
   {
     method: "get",
+    route: "/itemlist/detailcategorylist",
+    handler: (req, res) => {
+      const lists = readDB("itemlist");
+      res.send(lists["detailCateogyList"]);
+    },
+  },
+  {
+    method: "get",
     route: "/itemlist",
     handler: (req, res) => {
       const lists = readDB("itemlist");

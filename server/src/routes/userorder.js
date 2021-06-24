@@ -10,6 +10,22 @@ const userorderRoute = [
     },
   },
   {
+    method: "delete",
+    route: "/userorder",
+    handler: ({ body }, res) => {
+      try {
+        const order = readDB("userorder");
+
+        const deletedOrder = order.filter((item) => item.id !== +body.id);
+
+        writeDB("userorder", deletedOrder);
+        res.send(deletedOrder);
+      } catch (err) {
+        res.status(500).send({ error: err });
+      }
+    },
+  },
+  {
     method: "post",
     route: "/userorder",
     handler: ({ body }, res) => {
@@ -23,6 +39,7 @@ const userorderRoute = [
         category: body.category,
         categoryDetail: body.categoryDetail,
         releaseDate: body.releaseDate,
+        discount: body.discount,
       };
       order.unshift(orderedItem);
       writeDB("userorder", order);
