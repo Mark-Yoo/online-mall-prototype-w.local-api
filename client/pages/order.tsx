@@ -1,7 +1,23 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import AppLayout from '../components/AppLayout';
+import OrderCard from '../components/OrderCard';
+import { RootState } from '../store/reducers';
+import { getUserOrderList } from '../store/reducers/getOrderlist';
 
 const Order = () => {
-  return <div>장바구니</div>;
+  const { orderList } = useSelector((state: RootState) => state.getOrderlist);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(getUserOrderList());
+  }, [dispatch]);
+
+  useEffect(() => {
+    console.log(orderList);
+  }, [orderList]);
+
+  return <AppLayout>{orderList && <OrderCard orderList={orderList} />}</AppLayout>;
 };
 
 export default Order;

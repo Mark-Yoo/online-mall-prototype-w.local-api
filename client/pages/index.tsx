@@ -13,10 +13,6 @@ const Home = () => {
     dispatch(getCategory());
   }, []);
 
-  useEffect(() => {
-    console.log(categoryList);
-  }, [categoryList]);
-
   return (
     <AppLayout>
       <Card />

@@ -1,0 +1,36 @@
+.orderWrapper {
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.orderCard {
+  display: flex;
+  border: 1px solid black;
+  margin: 10px;
+}
+
+.productInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 10px 30px;
+  padding: 10px;
+  @media screen and (max-width: 700px) {
+    width: 40vw;
+  }
+}
+.detailImg {
+  margin: 20px 40px;
+  > img {
+    width: 10vw;
+    height: 10vw;
+  }
+}
+
+.productName {
+  font-size: 30px;
+}
+
+.productPrice {
+  font-size: 25px;
+}
